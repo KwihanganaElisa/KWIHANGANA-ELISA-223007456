@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Currency Converter</h2>
+
+    <!-- Amount Input -->
+    <div class="form-group">
+        <label>Enter Amount (FRW)</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+
+    <!-- Currency Selection -->
+     <div class="form-group">
+         <label>Select Currency</label>
+    <select id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EURO</option>
+    </select>
+
+     </div>
+   
+   <div class="form-group">
+     <!-- Rate Input -->
+    <label>Enter Rate</label>
+    <input type="number" id="rate" placeholder="Enter rate">
+   </div>
+
+    <!-- Convert Button -->
+    <button onclick="convertCurrency()">CONVERT</button>
+
+    <!-- Result -->
+    <div class="result" id="result">
+        Result here...
+    </div>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
